@@ -2,7 +2,6 @@ body {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size:100px;
     padding:100px;
     display:grid;
     gap:1.5rem;
@@ -12,13 +11,27 @@ body {
     background-color:chocolate;
 }
 
-#stats-container{
+#basic-info-container{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:2;
     border:2px solid black;
     border-radius: 5px;
     display:grid;
     gap:10px 0px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
+}
+
+#stats-container{
+    display:grid;
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:2;
+    border:2px solid black;
+    border-radius: 5px;
 }
 
 #pokemon-dropdown{
@@ -34,14 +47,33 @@ body {
 }
 
 
-#stat-table{
+#basic-info-table{
     font-size:10px;
     margin-left:5px;
     grid-row-start: 2;
     grid-column-start:1;
     grid-column-end:3;
-    max-height:300px;
 }
+
+#stats-table{
+    font-size:10px;
+    margin-left:5px;
+}
+
+#image-container {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start:2;
+}
+
+img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-height:200;
+    max-width:200;
+}
+
 th {
     text-align:left;
     padding:0;
@@ -64,28 +96,23 @@ audio::-webkit-media-controls-time-remaining-display {
     display: none;
 }
 
-#move-list{
-    resize: none;
-    max-height:min-content;
-    outline:none;
-    border:none;
-}
-
-#move-list:focus{
-    outline:none;
-    border:none;
-}
-
-#image-container {
-    grid-column-start: 3;
-    grid-column-end: 5;
+#moves-items-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    grid-column-start: 1;
+    grid-column-end:2;
     grid-row-start:2;
+    border:2px solid black;
+    border-radius: 5px;
 }
 
-img {
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    max-height:200;
-    max-width:200;
+#moves-items-container h1 {
+    font-size: 12px;
+}
+
+ul {
+    font-size:10;
+    padding: none;
+    list-style-type:none;
 }

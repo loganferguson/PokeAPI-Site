@@ -7,7 +7,7 @@
 </head>
     <body>
             
-        <div id="stats-container">
+        <div id="basic-info-container">
 
             <select id="pokemon-dropdown">
                 <option value="bulbasaur">Bulbasaur</option>
@@ -30,8 +30,8 @@
                 <img id="front_default" src="" alt="Image of a Pokemon.">
             </div>
 
-            <!-- STATS TABLE -->
-            <table id="stat-table">
+            <!-- BASIC INFO TABLE -->
+            <table id="basic-info-table">
                 <tr>
                   <th>Name</th>
                   <td id="data-name"></td>
@@ -40,6 +40,11 @@
                     <th>ID</th>
                     <td id="data-id"></td>
                   </tr>
+                <tr>
+                <tr>
+                    <th>Base Experience</th>
+                    <td id="data-base-experience"></td>
+                </tr>
                 <tr>
                   <th>Height</th>
                   <td id="data-height"></td>
@@ -57,11 +62,54 @@
                     </td>
                 </tr>
               </table>
-
         </div>
 
-        
-        <textarea readonly id="move-list"></textarea>
+        <!-- MOVES AND CONTAINER -->
+        <div id="moves-items-container">
+            <div id="moves-list-container">
+                <h1>Learnable Moves</h1>
+                <ul id="moves-list">
+
+                </ul>
+            </div>
+            <div id="items-list-container">
+                <h1>Held Items</h1>
+                <ul id="items-list">
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- STATS CONTAINER -->
+        <div id="stats-container">
+            <table id="stats-table">
+                <tr>
+                  <th>HP</th>
+                  <td id="data-hp"></td>
+                </tr>
+                <tr>
+                    <th>Attack</th>
+                    <td id="data-attack"></td>
+                  </tr>
+                <tr>
+                <tr>
+                    <th>Defense</th>
+                    <td id="data-defense"></td>
+                </tr>
+                <tr>
+                  <th>Special Attack</th>
+                  <td id="data-special-attack"></td>
+                </tr>
+                <tr>
+                  <th>Special Defense</th>
+                  <td id="data-special-defense"></td>
+                </tr>
+                <tr>
+                    <th>Speed</th>
+                    <td id="data-speed"></td>
+                </tr>
+            </table>
+        </div>
     </body>
 </div>
 <script src="script.js"></script>
