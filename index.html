@@ -1,0 +1,68 @@
+<html>
+<head> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+            
+        <div id="stats-container">
+
+            <select id="pokemon-dropdown">
+                <option value="bulbasaur">Bulbasaur</option>
+                <option value="ivySaur" selected>Ivysaur</option>
+                <option value="venusaur">Venusaur</option>
+                <option value="charmander">Charmander</option>
+                <option value="charmeleon">Charmeleon</option>
+                <option value="charizard">Charizard</option>
+                <option value="squirtle">Squirtle</option>
+                <option value="wartortle">Wartortle</option>
+                <option value="blastoise">Blastoise</option>
+                <option value="caterpie">Caterpie</option>
+                <option value="metapod">Metapod</option>
+                <option value="butterfree">Butterfree</option>
+                <option value="weedle">Weedle</option>
+                <option value="kakuna">Kakuna</option>
+            </select>
+
+            <div id="image-container">
+                <img id="front_default" src="" alt="Image of a Pokemon.">
+            </div>
+
+            <!-- STATS TABLE -->
+            <table id="stat-table">
+                <tr>
+                  <th>Name</th>
+                  <td id="data-name"></td>
+                </tr>
+                <tr>
+                    <th>ID</th>
+                    <td id="data-id"></td>
+                  </tr>
+                <tr>
+                  <th>Height</th>
+                  <td id="data-height"></td>
+                </tr>
+                <tr>
+                  <th>Weight</th>
+                  <td id="data-weight"></td>
+                </tr>
+                <tr>
+                    <th>Cry</th>
+                    <td>
+                        <audio id="audio-cry" controls>
+                            <source id="data-cry" src="" type="audio/ogg">
+                        </audio>
+                    </td>
+                </tr>
+              </table>
+
+        </div>
+
+        
+        <textarea readonly id="move-list"></textarea>
+    </body>
+</div>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:100px;
+    padding:100px;
+    display:grid;
+    gap:1.5rem;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color:chocolate;
+}
+
+#stats-container{
+    border:2px solid black;
+    border-radius: 5px;
+    display:grid;
+    gap:10px 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+#pokemon-dropdown{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display:block;
+    margin-left: 5px;
+    margin-top: 5px;
+    max-height:40px;
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+
+
+#stat-table{
+    font-size:10px;
+    margin-left:5px;
+    grid-row-start: 2;
+    grid-column-start:1;
+    grid-column-end:3;
+    max-height:300px;
+}
+th {
+    text-align:left;
+    padding:0;
+    border-bottom:1px solid #000;
+}
+td {
+    text-transform:capitalize;
+    text-align:center;
+    padding:0;
+    border-bottom:1px solid #000;
+    border-left:1px solid #000;
+}
+audio {
+    max-height:20px;
+    max-width:200px;
+    margin:3px;
+}
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+#move-list{
+    resize: none;
+    max-height:min-content;
+    outline:none;
+    border:none;
+}
+
+#move-list:focus{
+    outline:none;
+    border:none;
+}
+
+#image-container {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start:2;
+}
+
+img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-height:200;
+    max-width:200;
+}
